@@ -63,6 +63,7 @@ public class FirstActivity extends AppCompatActivity {
 
         Button startWidgetActivity = (Button) findViewById(R.id.start_widget_activity);
         Button startLayoutActivity = (Button) findViewById(R.id.start_layout_activity);
+        Button startBroadcast = (Button) findViewById(R.id.start_broadcast);
 
         startWidgetActivity.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,6 +81,13 @@ public class FirstActivity extends AppCompatActivity {
             }
         });
 
+        startBroadcast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FirstActivity.this, BroadcastActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

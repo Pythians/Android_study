@@ -16,19 +16,21 @@
 
     <Button
         android:id="@+id/start_widget_activity"
-        android:text="Start UI Widget"
+        android:text="@string/firstview_widget"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/start_layout_activity"
-        android:text="Start UI Layout"
+        android:text="@string/firstview_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_alignParentLeft="true"-->
-        <!--android:layout_alignParentStart="true"-->
-        <!--android:layout_marginTop="69dp"/>-->
+
+    <Button
+        android:id="@+id/start_broadcast"
+        android:text="@string/firstview_broadcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
 
 <!--</RelativeLayout>-->

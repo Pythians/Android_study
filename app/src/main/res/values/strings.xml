@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FirstAndroid</string>
+    <string name="firstview_widget">Start UI Widget</string>
+    <string name="firstview_layout">Start UI Layout</string>
+    <string name="firstview_broadcast">Start Broadcast</string>
+    <string name="broadcast_sent">Send broadcast</string>
 </resources>
