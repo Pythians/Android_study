@@ -15,6 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".UIWidgetActivity">
+        </activity>
+        <activity android:name=".UILayoutActivity">
+        </activity>
+        <activity android:name=".ListActivity">
+        </activity>
     </application>
 
 </manifest>

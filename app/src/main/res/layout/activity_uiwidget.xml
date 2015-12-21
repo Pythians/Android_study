@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_view"
+        android:text="This is TextView"
+        android:gravity="center"
+        android:textSize="32dp"
+        android:textColor="@color/colorGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_edit"
+            android:text="Edit"
+            android:layout_width="71dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/button_image"
+            android:text="Image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/button_progress"
+            android:text="Progress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/button_alert"
+            android:text="Alert"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_view"
+        android:hint="Type something here"
+        android:maxLines="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:src="@drawable/intranet"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"/>
+
+    <!--style="?android:attr/progressBarStyleHorizontal"-->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:visibility="gone"
+        android:max="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
