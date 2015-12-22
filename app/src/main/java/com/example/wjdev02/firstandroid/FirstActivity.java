@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 
+import com.example.wjdev02.storage.StorageActivity;
+
 public class FirstActivity extends AppCompatActivity {
 
     public static final String TAG = "MainActivity";
@@ -64,6 +66,7 @@ public class FirstActivity extends AppCompatActivity {
         Button startWidgetActivity = (Button) findViewById(R.id.start_widget_activity);
         Button startLayoutActivity = (Button) findViewById(R.id.start_layout_activity);
         Button startBroadcast = (Button) findViewById(R.id.start_broadcast);
+        final Button startStorage = (Button) findViewById(R.id.start_storage);
 
         startWidgetActivity.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,6 +88,14 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FirstActivity.this, BroadcastActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        startStorage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FirstActivity.this, StorageActivity.class);
                 startActivity(intent);
             }
         });

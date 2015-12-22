@@ -4,4 +4,11 @@
     <string name="firstview_layout">Start UI Layout</string>
     <string name="firstview_broadcast">Start Broadcast</string>
     <string name="broadcast_sent">Send broadcast</string>
+    <string name="storage_view">Start Storage</string>
+    <string name="storage_file">File storage</string>
+    <string name="storage_sharedPreference">SharedPreferences</string>
+    <string name="storage_sqlite">SQLite Storage</string>
+    <string name="storage_type">Type something to save</string>
+    <string name="storage_file_save">Save to file</string>
+    <string name="storage_file_read">Read from file</string>
 </resources>

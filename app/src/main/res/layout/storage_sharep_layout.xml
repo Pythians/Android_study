@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/storage_share_account"
+            android:text="Account"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/storage_share_account_edit"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Password"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/storage_share_password_edit"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow>
+        <CheckBox
+            android:id="@+id/storage_share_check"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Remember password"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/storage_share_login"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="Login"/>
+    </TableRow>
+</TableLayout>
