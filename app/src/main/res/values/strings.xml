@@ -11,4 +11,9 @@
     <string name="storage_type">Type something to save</string>
     <string name="storage_file_save">Save to file</string>
     <string name="storage_file_read">Read from file</string>
+    <string name="storage_sql_create">Create database</string>
+    <string name="storage_sql_add">add data</string>
+    <string name="storage_sql_del">del data</string>
+    <string name="storage_sql_upd">update data</string>
+    <string name="storage_sql_que">query data</string>
 </resources>
