@@ -91,7 +91,8 @@ public class StorageSQL extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 SQLiteDatabase db = databaseHelper.getWritableDatabase();
-                db.delete("book","pages > ?", new String[]{"0"});
+//                db.delete("book","pages > ?", new String[]{"0"});
+                db.execSQL("delete from book where pages > ?", new String[]{"400"});
                 query();
             }
         });
@@ -100,7 +101,8 @@ public class StorageSQL extends AppCompatActivity {
     private void query(){
         SQLiteDatabase db = databaseHelper.getWritableDatabase();
         String text = "";
-        Cursor cursor = db.query("book",null,null,null,null,null,null);
+//        Cursor cursor = db.query("book",null,null,null,null,null,null);
+        Cursor cursor = db.rawQuery("select * from book",null);
         if (cursor.moveToFirst()){
             do{
                 String name = cursor.getString(cursor.getColumnIndex("name"));
