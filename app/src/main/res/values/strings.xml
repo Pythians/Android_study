@@ -3,6 +3,7 @@
     <string name="firstview_widget">Start UI Widget</string>
     <string name="firstview_layout">Start UI Layout</string>
     <string name="firstview_broadcast">Start Broadcast</string>
+    <string name="firstview_content">Start ContentResolver</string>
     <string name="broadcast_sent">Send broadcast</string>
     <string name="storage_view">Start Storage</string>
     <string name="storage_file">File storage</string>
