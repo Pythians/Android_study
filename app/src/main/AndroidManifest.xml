@@ -55,10 +55,13 @@
         </activity>
 
         <provider
-            android:authorities="com.example.wjdev02.firstandroid.provide"
             android:name="com.example.wjdev02.contenteresolver.contentProvider"
+            android:authorities="com.example.wjdev02.firstandroid.provide"
             android:exported="true"/>
 
+        <activity
+            android:name="com.example.wjdev02.notification.NotificationActivity">
+        </activity>
     </application>
 
 </manifest>

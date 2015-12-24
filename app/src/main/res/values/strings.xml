@@ -4,6 +4,7 @@
     <string name="firstview_layout">Start UI Layout</string>
     <string name="firstview_broadcast">Start Broadcast</string>
     <string name="firstview_content">Start ContentResolver</string>
+    <string name="firstview_notification">Start Notification</string>
     <string name="broadcast_sent">Send broadcast</string>
     <string name="storage_view">Start Storage</string>
     <string name="storage_file">File storage</string>
@@ -17,4 +18,5 @@
     <string name="storage_sql_del">del data</string>
     <string name="storage_sql_upd">update data</string>
     <string name="storage_sql_que">query data</string>
+    <string name="notification_sent">Sent notice</string>
 </resources>
