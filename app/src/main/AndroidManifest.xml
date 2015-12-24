@@ -59,9 +59,16 @@
             android:authorities="com.example.wjdev02.firstandroid.provide"
             android:exported="true"/>
 
-        <activity
-            android:name="com.example.wjdev02.notification.NotificationActivity">
+        <activity android:name="com.example.wjdev02.notification.NotificationActivity">
         </activity>
+        <activity android:name="com.example.wjdev02.service.ServiceActivity">
+        </activity>
+
+        <service
+            android:name="com.example.wjdev02.service.MyService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
     </application>
 
 </manifest>

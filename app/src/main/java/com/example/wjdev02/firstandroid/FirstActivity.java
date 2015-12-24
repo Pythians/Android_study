@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.example.wjdev02.contenteresolver.ContentResolverActivity;
 import com.example.wjdev02.notification.NotificationActivity;
+import com.example.wjdev02.service.ServiceActivity;
 import com.example.wjdev02.storage.StorageActivity;
 
 public class FirstActivity extends AppCompatActivity {
@@ -70,6 +71,7 @@ public class FirstActivity extends AppCompatActivity {
         Button startStorage = (Button) findViewById(R.id.start_storage);
         Button startContent = (Button) findViewById(R.id.start_contentResolver);
         Button startNotification = (Button) findViewById(R.id.start_notification);
+        Button startService = (Button) findViewById(R.id.start_service);
 
         startWidgetActivity.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -115,6 +117,14 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FirstActivity.this, NotificationActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        startService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FirstActivity.this, ServiceActivity.class);
                 startActivity(intent);
             }
         });
