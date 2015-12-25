@@ -69,6 +69,14 @@
             android:enabled="true"
             android:exported="true">
         </service>
+        <service
+            android:name="com.example.wjdev02.service.MyIntentService"
+            android:exported="false">
+        </service>
+        <receiver android:name="com.example.wjdev02.service.ServiceBroadcastNotice">
+
+        </receiver>
+
     </application>
 
 </manifest>

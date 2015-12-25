@@ -6,6 +6,7 @@ import android.content.ServiceConnection;
 import android.os.IBinder;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -13,10 +14,11 @@ import com.example.wjdev02.firstandroid.R;
 
 public class ServiceActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button buttonStart ;
-    private Button buttonStop ;
-    private Button buttonBind ;
+    private Button buttonStart;
+    private Button buttonStop;
+    private Button buttonBind;
     private Button buttonUnbind;
+    private Button buttonIntent;
 
     private MyService.BindWorker worker;
     private ServiceConnection connection = new ServiceConnection() {
@@ -42,11 +44,13 @@ public class ServiceActivity extends AppCompatActivity implements View.OnClickLi
         buttonStop = (Button)findViewById(R.id.service_stop);
         buttonBind = (Button)findViewById(R.id.service_bind);
         buttonUnbind = (Button)findViewById(R.id.service_unbind);
+        buttonIntent = (Button)findViewById(R.id.service_startintent);
 
         buttonStart.setOnClickListener(this);
         buttonStop.setOnClickListener(this);
         buttonBind.setOnClickListener(this);
         buttonUnbind.setOnClickListener(this);
+        buttonIntent.setOnClickListener(this);
     }
 
     /***********************************************************************************************
@@ -68,6 +72,11 @@ public class ServiceActivity extends AppCompatActivity implements View.OnClickLi
                 break;
             case R.id.service_unbind:
                 unbindService(connection);
+                break;
+            case R.id.service_startintent:
+                Log.d("MyService", "Thread: " + Thread.currentThread().getId());
+                intent = new Intent(this,MyIntentService.class);
+                startService(intent);
                 break;
             default:
                 break;

@@ -24,4 +24,5 @@
     <string name="service_stop">Stop Service</string>
     <string name="service_bind">Bind Service</string>
     <string name="service_unbind">Unbind Service</string>
+    <string name="service_intent">Start Intent Service</string>
 </resources>

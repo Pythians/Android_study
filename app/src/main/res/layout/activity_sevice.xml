@@ -33,4 +33,10 @@
         android:layout_below="@id/service_bind"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/service_startintent"
+        android:text="@string/service_intent"
+        android:layout_below="@id/service_unbind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>
