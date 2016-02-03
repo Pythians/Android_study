@@ -6,6 +6,7 @@
     <string name="firstview_content">Start ContentResolver</string>
     <string name="firstview_notification">Start Notification</string>
     <string name="firstview_service">Start Service</string>
+    <string name="firstview_app">Web activity</string>
     <string name="broadcast_sent">Send broadcast</string>
     <string name="storage_view">Start Storage</string>
     <string name="storage_file">File storage</string>
@@ -25,4 +26,8 @@
     <string name="service_bind">Bind Service</string>
     <string name="service_unbind">Unbind Service</string>
     <string name="service_intent">Start Intent Service</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

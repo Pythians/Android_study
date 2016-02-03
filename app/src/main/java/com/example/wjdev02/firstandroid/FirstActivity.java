@@ -1,12 +1,22 @@
 package com.example.wjdev02.firstandroid;
 
+import android.app.ActionBar;
 import android.content.Intent;
+import android.graphics.Paint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
+import com.example.wjdev02.Web.FullscreenActivity;
 import com.example.wjdev02.contenteresolver.ContentResolverActivity;
 import com.example.wjdev02.notification.NotificationActivity;
 import com.example.wjdev02.service.ServiceActivity;
@@ -72,6 +82,34 @@ public class FirstActivity extends AppCompatActivity {
         Button startContent = (Button) findViewById(R.id.start_contentResolver);
         Button startNotification = (Button) findViewById(R.id.start_notification);
         Button startService = (Button) findViewById(R.id.start_service);
+        Button startApp = (Button) findViewById(R.id.start_app);
+
+        startApp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Intent intent = new Intent(FirstActivity.this, FullscreenActivity.class);
+//                startActivity(intent);
+                WebView webView = new WebView(v.getContext());
+                webView.getSettings().setJavaScriptEnabled(true);
+                webView.setWebViewClient(new WebViewClient() {
+                    @Override
+                    public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                        view.loadUrl(url);
+                        return true;
+                    }
+                });
+                webView.loadUrl("http://www.bing.com");
+                FrameLayout layout = new FrameLayout(v.getContext());
+                layout.addView(webView);
+                ImageButton button = new ImageButton(v.getContext());
+                button.setImageResource(R.drawable.gold_coin_single);
+                button.setX(100);
+                button.setY(100);
+//                layout.addView(button);
+                LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+                addContentView(layout,layoutParams);
+            }
+        });
 
         startWidgetActivity.setOnClickListener(new View.OnClickListener() {
             @Override
